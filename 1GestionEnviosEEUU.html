@@ -13,24 +13,34 @@
     <h1>Gestión de envíos a EEUU</h1>
     <form name="form1">
         <label for="">Fecha</label>
-        <input type="text" name="fec" value="31-02-2024" />
+        <input type="text" name="fec" placeholder="DD/MM/AAAA" />
         <label for="">Empleado </label>
-        <input type="text" name="emp" value="WW$1234" />
+        <input type="text" name="emp" placeholder="WW$1234" />
         <label for="">Cliente</label>
-        <input type="text" name="cli" value="NM_NewYork:1234" />
+        <input type="text" name="cli" placeholder="NY_NewYork:1234" />
         <label for="">Gramos</label>
-        <input type="text" name="grs" value="3000" />
+        <input type="text" name="grs" placeholder="1500" />
         <label for="">Composicion</label>
-        <input type="text" name="comp" value="200gC3OH7" />
+        <input type="text" name="comp" placeholder="200gC3OH7" />
         <label for="">Cuenta Usa</label>
-        <input type="text" name="cta" value="AS22-122323232323-12" />
+        <input type="text" name="cta" placeholder="KK20-122323232323-12" />
         <br>
     </form>
-    <button onclick="validarDatos()">Registrar</button>
-    <button value="limpiar campos" onclick="">Limpiar Campos</button>
+    <button onclick="registrar()">Registrar</button>
+    <button onclick="validar()">Validar</button>
+    <button value="limpiar campos" onclick="limpiarCampos()">Limpiar Campos</button>
 
 
 </body>
 <script src="usa.js"></script>
 
 </html>
+
+<!--
+    value="31/02/2024"
+    value="WW$1234"
+    value="NY_NewYork:1234"
+    value="1000"
+    value="200gC3OH7"
+    value="KK20-122323232323-12"
+-->
